@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #f5f7fb;
+    --accent-color: #ff9671;
+    --font-size: 1.2rem;
+    --spacing: 10px;
+}
+
+.login {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.login-page {
+	display: flex;
+    width: 80%;
+	max-width: 600px;
+	height: 60%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 8px 15px rgba(47, 47, 47, 0.2);
+}
+
+.form {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    padding-bottom: 40px;
+}
+
+.login-heading {
+    margin-top: 30px;
+	font-size: var(--font-size);
+	text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+label span{
+    font-size: var(--font-size);
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing);
+    width: 100%;
+    text-align: left;
+}
+
+.input, .password {
+	width: 90%;
+	line-height: 2rem;
+	text-align: left;
+	border: none;
+	border-radius: 7px;
+	background-color: var(--secondary-color);
+    padding: var(--spacing);
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 15px rgba(47, 47, 47, 0.1);
+    margin-top: var(--spacing);
+}
+
+input:focus {
+	outline-color: var(--accent-color);
+}
+
+.submitBtn {
+    width: 120px;
+    height: 40px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(47, 47, 47, 0.2);
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.submitBtn:hover{
+    background: linear-gradient(45deg, #ff9671, #ff6f91, #d65db1);
+    box-shadow: 0px, 15px 20px rbga(37, 184, 171, 0.9);
+}
+
+@media screen and (max-width: 768px) {
+    .login-page {
+         width: 90%;
+     }
+    .form {
+         width: 90%;
+     }
+    .login-heading {
+         font-size: 1.5rem;
+     }
+     label span{
+         font-size: 1rem;
+     }
+    .input,.password {
+         line-height: 1.5rem;
+         padding: 5px;
+         margin-bottom: 10px;
+     }
+    .submitBtn {
+         width: 100px;
+         height: 30px;
+         font-size: 10px;
+         letter-spacing: 1px;
+     }
+ }
