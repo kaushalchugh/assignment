@@ -95,6 +95,14 @@ input:focus {
     box-shadow: 0px, 15px 20px rbga(37, 184, 171, 0.9);
 }
 
+.message {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ff9671;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .login-page {
          width: 90%;

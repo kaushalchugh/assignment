@@ -31,27 +31,27 @@ const Login = () => {
     };
     return(
     <>
-        <section class="login">
-            <div class="login-page">
-            <h1 class="login-heading">Login</h1>
-                <form class="form" onSubmit = {handleSubmit}>
+        <section className="login">
+            <div className="login-page">
+            <h1 className="login-heading">Login</h1>
+                <form className="form" onSubmit = {handleSubmit}>
                     <label>
                         <span>Enter Email Address:</span>
                     </label>
-                        <input class="input" type= "email" value={email} placeholder="Enter Email Address" onChange={(e) => setEmail(e.target.value)}/>
+                        <input className="input" type= "email" value={email} placeholder="Enter Email Address" onChange={(e) => setEmail(e.target.value)}/>
                     
 
                     <label>
                         <span>Enter Password</span>
                     </label>
 
-                        <input class="password" type = "password" value={password} placeholder="Enter Password" onChange={(e) => setPassword(e.target.value)}/>
+                        <input className="password" type = "password" value={password} placeholder="Enter Password" onChange={(e) => setPassword(e.target.value)}/>
                     
-                    <button class="submitBtn" type="submit">
+                    <button className="submitBtn" type="submit">
                         LogIn
                     </button>
-                    </form>
-                    {message && <p>{message}</p>}
+                    {message && <p className="message">{message}</p>}
+                </form>
             </div>
         </section>
     </>
