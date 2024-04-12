@@ -3,11 +3,9 @@ import { useContext } from "react";
 import { AuthContext } from "./AuthContext";
 import Navbar from "./Navbar";
 import "../css/UserProfile.css";
-import { useNavigate } from "react-router-dom";
 
 const UserProfile = () => {
   const { user, setUser, logout } = useContext(AuthContext);
-  const navigate = useNavigate();
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState(user?.name || "");
   const [email, setEmail] = useState(user?.email || "");
@@ -17,8 +15,6 @@ const UserProfile = () => {
     // Mock update operation
     setUser({ ...user, name, email });
     setEditing(false);
-
-    navigate("/");
 
   };
 
