@@ -2,17 +2,17 @@ const mockData ={
     user: [
         {
             email: 'user1@example.com',
-            username: 'user1',
+            name: 'user1',
             password: 'password1',
         },
         {
             email: 'user2@example.com',
-            username: 'user2',
+            name: 'user2',
             password: 'password2',
         },
         {
             email: 'user3@example.com',
-            username: 'user3',
+            name: 'user3',
             password: 'password3',
         }
     ]
