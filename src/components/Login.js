@@ -40,19 +40,18 @@ const Login = () => {
                     </label>
                         <input className="input" type= "email" value={email} placeholder="Enter Email Address" onChange={(e) => setEmail(e.target.value)}/>
                     
-
                     <label>
-                        <span>Enter Password</span>
+                        <span>Enter Password:</span>
                     </label>
 
-                        <input className="password" type = "password" value={password} placeholder="Enter Password" onChange={(e) => setPassword(e.target.value)}/>
+                        <input className="input" type = "password" value={password} placeholder="Enter Password" onChange={(e) => setPassword(e.target.value)}/>
                     
                     <button className="submitBtn" type="submit">
                         LogIn
                     </button>
                     {message && <p className="message">{message}</p>}
                 </form>
-            </div>
+                </div>
         </section>
     </>
     );
